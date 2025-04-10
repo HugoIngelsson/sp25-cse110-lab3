@@ -16,6 +16,7 @@
                 <dt><a href="#notes">Meeting Notes</a></dt>
                 <dt><a href="#future">Next Week</a></dt>
                 <dt><a href="#form">Remote Check-in Form</a></dt>
+                <dd>Please complete this!</dd>
             </dl>
         </nav>
         </details>
@@ -27,8 +28,10 @@
         <h2>Topic: Weekly Check-ins</h2>
 
         <hr>
-        Take some music along for the ride? (<b>WARNING:</b> it's really loud since we can't use JavaScript to set the volume)<br>
+        <div id="useless">
+        Take some music along for the <span id="uselesser">ride</span>? (<b>WARNING:</b> it's really loud since we can't use JavaScript to set the volume)<br>
         <audio controls src="theelevatorbossanova.mp3" loop>Play me!</audio>
+        </div>
         
         <hr>
         <section id="attendance">
@@ -40,13 +43,14 @@
                 fill in the form at the bottom of this page.
             </p>
 
-            <p>Present at meeting:
-            <ul>
-                <li>A</li>
-                <li>B</li>
-                <li>D</li>
-                <li>F <i>(via Zoom)</i></li>
-            </ul>
+            <p>
+                Present at meeting:
+                <ul>
+                    <li>A</li>
+                    <li>B</li>
+                    <li>D</li>
+                    <li>F <i>(via Zoom)</i></li>
+                </ul>
             </p>
         </section>
 
@@ -68,7 +72,8 @@
 
             <p>
                 B gave a demonstration of the new foo-bar machine he's been working on. Unfortunately, the audio didn't record!
-                <p><video src="CSE110_video.mov" controls width="600px"></video></p>
+                <br>
+                <video src="CSE110_video.mov" controls width="600"></video>
             </p>
 
             <p>
@@ -99,16 +104,16 @@
         <form id="form">
             <h3>Remote Check-in Form</h3>
 
-            <p>Name: <input type=text></label></p>
+            <p><label>Name: <input type=text></label></p>
 
-            <p>Date: <input type=date></label></p>
+            <p><label>Date: <input type=date></label></p>
 
             <fieldset>
             <legend>Reason for missing meeting</legend>
             <p><label><input type=checkbox name=g> I had a conflict.</label></p>
             <p><label><input type=checkbox name=g> I forgot.</label></p>
             <p><label><input type=checkbox name=g> Something came up!</label></p>
-            <p><label><input type=checkbox name=g> Other: <input type=text></label></label></p>
+            <p><label><input type=checkbox name=g> Other: </label><label><input type=text></label></p>
             </fieldset>
 
             <fieldset>
