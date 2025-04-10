@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="./clock.png">
+    <title>Meeting Minutes</title>
+  </head>
+  <body>
+    <header>
+        <details>
+        <summary>Page Navigation</summary>
+        <nav>
+            <dl>
+                <dt><a href="#attendance">Attendance</a></dt>
+                <dt><a href="#agenda">Meeting Agenda</a></dt>
+                <dt><a href="#notes">Meeting Notes</a></dt>
+                <dt><a href="#future">Next Week</a></dt>
+                <dt><a href="#form">Remote Check-in Form</a></dt>
+            </dl>
+        </nav>
+        </details>
+    </header>
+
+    <main>
+        <h1>Super Cool Meeting Minutes!</h1>
+        <h2>Date: April 15, 2025</h2>
+        <h2>Topic: Weekly Check-ins</h2>
+
+        <hr>
+        Take some music along for the ride? (<b>WARNING:</b> it's really loud since we can't use JavaScript to set the volume)<br>
+        <audio controls src="theelevatorbossanova.mp3" loop>Play me!</audio>
+        
+        <hr>
+        <section id="attendance">
+            <h3>Attendance</h3>
+            <p>
+                It's <strong>SUPER</strong> important that you who missed
+                this meeting show up to future ones. This is how we stay
+                on track and in sync. If you missed this meeting, <em>please</em>
+                fill in the form at the bottom of this page.
+            </p>
+
+            <p>Present at meeting:
+            <ul>
+                <li>A</li>
+                <li>B</li>
+                <li>D</li>
+                <li>F <i>(via Zoom)</i></li>
+            </ul>
+            </p>
+        </section>
+
+        <hr>
+        <section id="agenda">
+            <h3>Meeting Agenda</h3>
+            <ol>
+                <li>Finish up the discussion around use of LLMs from last week</li>
+                <li>Go around the table for weekly updates from everyone</li>
+                <li>Discuss the future of the MCU</li>
+                <li>Give goals for next week</li>
+                <li><b>(A and D):</b> Sync up about ...</li>
+            </ol>
+        </section>
+
+        <hr>
+        <section id="notes">
+            <h3>Meeting Notes</h3>
+
+            <p>
+                B gave a demonstration of the new foo-bar machine he's been working on. Unfortunately, the audio didn't record!
+                <p><video src="CSE110_video.mov" controls width="600px"></video></p>
+            </p>
+
+            <p>
+                F's internet cut out halfway through the meeting, but it seemed like she was making good progress? Something about red birds and pigs...
+            </p>
+
+            <p>
+                It seems like we've reached a consensus around the MCU: It's dying. 
+                Ultimately, the need to increase the stakes movie after movie leads to 
+                an ever increasing series of unreasonable plots and villains. No longer can a villain
+                be just some guy trying to destroy the city; now it has to be Gorg the Earthshatterer ready
+                to destroy the Earth in 1125 different dimensions, each with an increasingly sinister
+                plans for how to do so. It really is sad.
+            </p>
+        </section>
+
+        <hr>
+        <section id="future">
+            <h3>Next Week</h3>
+
+            <p>Keep up the good work everyone! We're almost there.</p>
+            <p>If you weren't at today's meeting, please fill in the form and organize with your group leader to know what you'll be doing next.</p>
+        </section>
+    </main>
+
+    <footer>
+        <hr>
+        <form id="form">
+            <h3>Remote Check-in Form</h3>
+
+            <p>Name: <input type=text></label></p>
+
+            <p>Date: <input type=date></label></p>
+
+            <fieldset>
+            <legend>Reason for missing meeting</legend>
+            <p><label><input type=checkbox name=g> I had a conflict.</label></p>
+            <p><label><input type=checkbox name=g> I forgot.</label></p>
+            <p><label><input type=checkbox name=g> Something came up!</label></p>
+            <p><label><input type=checkbox name=g> Other: <input type=text></label></label></p>
+            </fieldset>
+
+            <fieldset>
+            <legend>Time spent working last week (hours)</legend>
+            <label><input type=radio name=c> 0-1 </label>
+            <label><input type=radio name=c> 1-2 </label>
+            <label><input type=radio name=c> 2-4 </label>
+            <label><input type=radio name=c> 4-7 </label>
+            <label><input type=radio name=c> 7+ </label>
+            </fieldset>
+
+            <fieldset>
+            <legend>Progress Report</legend>
+            <textarea name="summary"></textarea>
+            </fieldset>
+
+            <p>
+            Favorite animal?
+            <input name=animal list=animals>
+            <datalist id=animals>
+            <option value="Cat">
+            <option value="Dog">
+            <option value="Bunny">
+            <option value="Other (please specify)">
+            </datalist> 
+            </p>
+
+            <p>
+            <label for="island">Choose 3 things you'd bring to an abandoned island:</label>
+            <select id="island" name="island" multiple>
+                <option value="1" selected> 3 Gallon Jug of Water </option>
+                <option value="2" selected> Phone </option>
+                <option value="3" selected> 50oz Bag of Rice </option>
+                <option value="4" selected> Flare Gun </option>
+                <option value="5" selected> First Aid Kit </option>
+                <option value="6" selected> Tool Kit </option>
+                <option value="7" selected> Friend </option>
+                <option value="8" selected> Book Series </option>
+                <option value="9" selected> Boat Motor </option>
+            </select>
+            </p>
+
+            <p>
+                <button type=button
+                        onclick="alert('This button does nothing.')">
+                Submit Form
+                </button>
+            </p>
+        </form>
+    </footer>
+  </body>
+</html>
