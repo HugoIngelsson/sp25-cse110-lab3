@@ -1,3 +1,3 @@
 # Lab 2 - Starter
 
-Link to website: [https://hugoingelsson.github.io/Lab2_Starter/](https://hugoingelsson.github.io/Lab2_Starter/)
+Link to website: [https://hugoingelsson.github.io/sp25-cse110-lab3/](https://hugoingelsson.github.io/sp25-cse110-lab3/)
