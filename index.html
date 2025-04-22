@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <link rel="shortcut icon" href="./clock.png">
+    <link rel="stylesheet" href="./style.css">
     <title>Meeting Minutes</title>
   </head>
   <body>
@@ -10,7 +11,7 @@
         <details>
         <summary>Page Navigation</summary>
         <nav>
-            <dl>
+            <dl class="list">
                 <dt><a href="#attendance">Attendance</a></dt>
                 <dt><a href="#agenda">Meeting Agenda</a></dt>
                 <dt><a href="#notes">Meeting Notes</a></dt>
@@ -28,8 +29,8 @@
         <h2>Topic: Weekly Check-ins</h2>
 
         <hr>
-        <div id="useless">
-        Take some music along for the <span id="uselesser">ride</span>? (<b>WARNING:</b> it's really loud since we can't use JavaScript to set the volume)<br>
+        <div class="useful-div">
+        Take some music along for the <span id="usefuller">ride</span>? (<b>WARNING:</b> it's really loud since we can't use JavaScript to set the volume)<br>
         <audio controls src="theelevatorbossanova.mp3" loop>Play me!</audio>
         </div>
         
@@ -44,7 +45,7 @@
             </p>
 
             Present at meeting:
-            <ul>
+            <ul class="list">
                 <li>A</li>
                 <li>B</li>
                 <li>D</li>
@@ -55,7 +56,7 @@
         <hr>
         <section id="agenda">
             <h3>Meeting Agenda</h3>
-            <ol>
+            <ol class="list">
                 <li>Finish up the discussion around use of LLMs from last week</li>
                 <li>Go around the table for weekly updates from everyone</li>
                 <li>Discuss the future of the MCU</li>
