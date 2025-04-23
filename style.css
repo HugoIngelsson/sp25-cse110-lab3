@@ -15,23 +15,23 @@
         "word word";
     grid-template-rows: [row1-start] auto [row1-end row2-start] auto [row2end];
     grid-template-columns: [col1-start] auto auto [col3-start] min(300px, 40vw);
+}
 
-    #in-useful-div {
-        grid-column-start: col1-start;
-        grid-column-end: col3-start;
-    }
+.useful-div #in-useful-div {
+    grid-column-start: col1-start;
+    grid-column-end: col3-start;
+}
 
-    #word1 {
-        justify-self: right;
-        padding-right: 2em;
-    }
+.useful-div #word1 {
+    justify-self: right;
+    padding-right: 2em;
+}
 
-    #word2 {
-        justify-self: left;
-        padding-left: 2em;
-        position: relative;
-        left: 20vw;
-    }
+.useful-div #word2 {
+    justify-self: left;
+    padding-left: 2em;
+    position: relative;
+    left: 20vw;
 }
 
 #usefuller {
@@ -51,8 +51,8 @@ audio[src="theelevatorbossanova.mp3"] {
     height: 100%
 }
 
-dt {
-    color: hsl(100, 255, 100);
+dl {
+    color: hsl(100, 100, 100);
 }
 
 header {
@@ -125,7 +125,7 @@ dl.list {
 section:has(*.list) {
     background-color: lightskyblue;
 
-    & .list {
+    & listt {
         background-color: lightseagreen;
     }
 }
@@ -150,9 +150,10 @@ fieldset {
         flex-wrap: wrap;
         justify-content: space-evenly;
     
-        #big-box {
-            order: 99;
-        }
+    }
+
+    #big-box {
+        order: 99;
     }
 }
 
